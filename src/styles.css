@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--text-md);
+  color: var(--black-3);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+
+  /* Gray 2 */
+  color: var(--black-2);
+}
+
+.label {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height */
+
+
+  /* Gray 1 */
+  color: var(--gray-1);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+:root {
+  --text-md: 14px;
+  --text-sm: 12px;
+  --text-xl: 24px;
+}
+
+:root {
+  --white: #FFFFFF;
+  --white-1: #FAFBFD;
+  --black: #000000;
+  --black-2: #3F3F3F;
+  --black-3: #090F31;
+  --orange: #F7542E;
+  --gray: #A9A9A9;
+  --gray-1: #9E9E9E;
+  --default: #E0E0E0;
+  --default-opacity: rgba(224, 224, 224, 0.8);
+  --default-dark: #AEAEAE;
+  --primary: #2962FF;
+  --primary-opacity: rgba(41, 98, 255, 0.15);
+  --primary-dark: #3D5AFE;
+  --primary-xdark: #0039CB;
+  --primary-xlight: #2962FF1A;
+  --secondary: #455A64;
+  --secondary-opacity: rgba(69, 90, 100, 0.15);
+  --secondary-dark: #1C313A;
+  --danger: #D32F2F;
+  --danger-opacity: rgba(211, 47, 47, 0.15);
+  --danger-dark: #9A0007;
+}
+
+:root {
+  --sidebar-width: 237px;
+  --footer-heigth: 65px;
+  --border-radius: 6px;
+}
+
+:root {
+  --text-transition: 400ms;
+}

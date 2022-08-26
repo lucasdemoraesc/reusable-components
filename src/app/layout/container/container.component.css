@@ -1,0 +1,6 @@
+.content-container {
+  margin-left: var(--sidebar-width);
+  margin-bottom: var(--footer-heigth);
+  padding-left: 65px;
+  padding-top: 48px;
+}

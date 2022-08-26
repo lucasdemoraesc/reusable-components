@@ -1,0 +1,11 @@
+<aside class="sidebar-container">
+  <h2 class="heading"><span class="orange">Dev</span>Challenge.io</h2>
+
+  <section class="menu">
+    <a class="menu-item"
+      [routerLink]="item.route"
+      [routerLinkActive]="'actived'"
+      *ngFor="let item of menuItens">{{item.title}}
+    </a>
+  </section>
+</aside>

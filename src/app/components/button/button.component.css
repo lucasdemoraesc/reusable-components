@@ -1,0 +1,152 @@
+/* Button -------------------------------------------------- */
+.app-btn {
+  position: relative;
+  overflow: hidden;
+
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  text-align: center;
+
+  border: none;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  -webkit-user-select: none;
+  user-select: none;
+
+  transition: background var(--text-transition);
+}
+
+.app-btn:not([disabled]) {
+  cursor: pointer;
+}
+
+/* Sizes -------------------------------------------------- */
+.app-btn.app-btn-sm {
+  padding: 0 10px;
+  min-width: 32px;
+  line-height: 28px;
+}
+
+.app-btn.app-btn-md {
+  padding: 0 12px;
+  min-width: 42px;
+  line-height: 34px;
+}
+
+.app-btn.app-btn-lg {
+  padding: 0 16px;
+  min-width: 64px;
+  line-height: 38px;
+}
+
+/* Colors Raised ------------------------------------------ */
+.app-btn.app-btn-raised:not(.app-btn-default) {
+  color: var(--white);
+}
+
+.app-btn.app-btn-raised.app-btn-default:hover:not([disabled]) {
+  background: var(--default-dark);
+}
+
+.app-btn.app-btn-raised.app-btn-default,
+.app-btn.app-btn-raised.app-btn-default:active:not([disabled]) {
+  background: var(--default);
+}
+
+.app-btn.app-btn-raised.app-btn-primary:hover:not([disabled]) {
+  background: var(--primary-xdark);
+}
+
+.app-btn.app-btn-raised.app-btn-primary,
+.app-btn.app-btn-raised.app-btn-primary:active:not([disabled]) {
+  background: var(--primary);
+}
+
+.app-btn.app-btn-raised.app-btn-secondary:hover:not([disabled]) {
+  background: var(--secondary-dark);
+}
+
+.app-btn.app-btn-raised.app-btn-secondary,
+.app-btn.app-btn-raised.app-btn-secondary:active:not([disabled]) {
+  background: var(--secondary);
+}
+
+.app-btn.app-btn-raised.app-btn-danger:hover:not([disabled]) {
+  background: var(--danger-dark);
+}
+
+.app-btn.app-btn-raised.app-btn-danger,
+.app-btn.app-btn-raised.app-btn-danger:active:not([disabled]) {
+  background: var(--danger);
+}
+
+/* Colors Outline & Text ---------------------------------- */
+.app-btn.app-btn-outline.app-btn-default:hover:not([disabled]),
+.app-btn.app-btn-text.app-btn-default:hover:not([disabled]) {
+  background: var(--default-opacity);
+}
+
+.app-btn.app-btn-outline.app-btn-primary,
+.app-btn.app-btn-text.app-btn-primary {
+  color: var(--primary);
+}
+
+.app-btn.app-btn-outline.app-btn-primary:hover:not([disabled]),
+.app-btn.app-btn-text.app-btn-primary:hover:not([disabled]) {
+  background: var(--primary-opacity);
+}
+
+.app-btn.app-btn-outline.app-btn-secondary,
+.app-btn.app-btn-text.app-btn-secondary {
+  color: var(--secondary);
+}
+
+.app-btn.app-btn-outline.app-btn-secondary:hover:not([disabled]),
+.app-btn.app-btn-text.app-btn-secondary:hover:not([disabled]) {
+  background: var(--secondary-opacity);
+}
+
+.app-btn.app-btn-outline.app-btn-danger,
+.app-btn.app-btn-text.app-btn-danger {
+  color: var(--danger);
+}
+
+.app-btn.app-btn-outline.app-btn-danger:hover:not([disabled]),
+.app-btn.app-btn-text.app-btn-danger:hover:not([disabled]) {
+  background: var(--danger-opacity);
+}
+
+.app-btn.app-btn-outline {
+  border: solid 1px;
+}
+
+.app-btn.app-btn-outline,
+.app-btn.app-btn-text {
+  background: transparent;
+}
+
+.app-btn.app-btn-outline:active:not([disabled]),
+.app-btn.app-btn-text:active:not([disabled]) {
+  background: transparent !important;
+}
+
+/* Icons --------------------------------------------------- */
+.app-btn .app-btn-icon {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.app-btn .app-btn-icon.start {
+  margin: 0 6px 3px 0;
+}
+
+.app-btn .app-btn-icon.end {
+  margin: 0 0 3px 6px;
+}
+
+
+/* Shadows ------------------------------------------------- */
+.app-btn-noshadow {
+  box-shadow: none;
+}

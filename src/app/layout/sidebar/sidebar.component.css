@@ -1,0 +1,47 @@
+.sidebar-container {
+  position: fixed;
+  width: var(--sidebar-width);
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+
+  background: var(--white-1);
+}
+
+.sidebar-container .heading {
+  margin-left: 48px;
+  margin-top: 38px;
+  font-weight: 600;
+  font-size: var(--text-md);
+  line-height: 20px;
+  cursor: default;
+}
+
+.sidebar-container .menu {
+  margin-top: 50%;
+  padding-left: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebar-container .menu .menu-item {
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-size: var(--text-md);
+  line-height: 20px;
+  text-decoration: none;
+
+  color: var(--gray-1);
+  transition: color var(--text-transition);
+}
+
+.sidebar-container .menu .menu-item:hover {
+  color: var(--black-2);
+}
+
+.sidebar-container .menu .menu-item.actived {
+  font-weight: 700;
+  color: var(--black-3);
+}
